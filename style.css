@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'montserrat';
+    color: white;
+}
+
+html, body{
+height: 100%;
+width: 100vw;
+}
+
+#nav{
+    height: 110px;    
+    width: 100vw; 
+    display: flex;
+    align-items: center;
+    padding: 0 10vw;
+    gap: 4vw;
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 99;
+    font-size: 20px;
+}
+#nav img{
+    height: 70px;
+}
+#nav h4{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    filter: contrast(80%);
+}
+
+#main{
+    position: relative;
+}
+
+#page1{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+}
+
+#page1 h1{
+    font-size: 9vw;
+    font-weight: 900;
+    position: relative;
+}
+#page1 h1::before{
+    content: "BE THE GAMER";
+    position: absolute;
+    color: black;
+    left: -0.4vw;
+    top: -0.4vw;
+    -webkit-text-stroke: 2px rgb(69, 228, 69);
+    z-index: -1;
+    
+
+}
+
+
+#page1 h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#page1 p{
+    font-size: 20px;
+    justify-content: center;
+    width: 50vw;
+}
+
+#page2{
+    minheight: 100vh;
+    width: 100vw;
+}
+
+#scroller{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+
+#scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name:scroll ;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#scroller h4{
+    display: inline-block;
+    font-size: 10vw;
+    font-weight: 900;
+    font-family: gilroy;
+    margin-right: 40px;
+    transition: all linear 0.5s;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(114, 172, 27);
+}
+
+#scroller h4:hover{
+    color: greenyellow;
+}
+
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#about-us{
+    margin-top: 90px;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    padding:0 40px;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+#about-us img{
+    height: 16vmax;
+    width: 17vmax;
+    
+}
+ #about-us-in{
+    width: 40%;
+    text-align: center;
+ }
+ #about-us-in h4{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+ }
+ #about-us-in p{
+    font-size: 1.8vmax;
+    line-height: 26px;
+ }
+
+ .headingofcontainer h4{
+    margin: 50px 0 30px 0 ;
+    font-size: 4.8vw;
+    font-weight: 700;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+
+}
+
+ #topgames{
+    height: 60vh;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+ }
+
+ .top{
+    height: 50vmin;
+    width: 20vmax;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+ }
+ #top1{
+    background-image: url(cod.jpg);
+ }
+
+ #top2{
+    background-image: url(god2.jpg);
+ }
+ #top3{
+    background-image: url(valorant.jpg);
+ }
+
+ .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(136, 196, 45);
+    padding: 10px;
+    padding-top: 50px;
+    opacity: 0;
+    transition: all ease 0.6s;
+    position: relative;
+ }
+ .overlay h4{
+    color: black;
+    font-size: 2.8vw;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.overlay p{
+    color: black;
+    font-size: 2.3vmin;
+    text-align: center;
+}
+.overlay a{
+    text-align: center;
+    justify-content: center;
+    font-size: 3vmin
+}
+ .top :hover{
+    opacity: 1;
+ }
+
+#page3{
+    margin-top: 80px;
+    height: 60vmin;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#page3>p{
+    color: white;
+font-size: 2vw;
+font-weight: 900px;
+width: 45%;
+line-height: 30px;
+text-align: center;
+
+} 
+
+#page3 img{
+    position: absolute;
+    height: 8vw;
+}
+
+#page3 #topimg{
+    left: 10%;
+    top: 20%;
+}
+
+#page3 #bottemimg{
+    right: 15%;
+    bottom: 24%;
+}
+
+
+/* page 4 sponsed game*/
+
+#page4{
+    min-height: 50vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 20vh;
+    flex-direction: column;
+    text-align: center; 
+}
+
+#sponser{
+   
+    height: 39vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-color: black;
+}
+
+.sponserdata{
+    width: 30vw;
+}
+
+.sponserdata h4{
+    font-size: 5vw;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.sponserdata p{
+    font-size: 2vw;
+    font-weight: 200;
+
+}
+
+.sponserpic{
+    position: relative;
+    height: max-content;
+    width: 60vw;
+    margin: 15px;
+}
+
+
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+    border-radius: 0.5rem;
+    overflow-x: hidden;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nav{
+ display: flex;
+ column-gap: 1rem;
+ position: absolute;
+ left: 50%;
+ bottom: -1.2rem;
+ transform: translateX(-50%);
+ z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.55;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+/* page 5th recomendations */
+#page5{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+   margin-top: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+/* recomdation heading */
+#recommend-heading {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    text-align: center;
+    position: relative;
+    padding: 100px 0 50px 0;
+  }
+  #recommend-heading img {
+    height: 15vw;
+  }
+  
+  #recommend-heading h4 {
+    font-size: 6vw;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  
+#recommend-games{
+    margin: 30px;
+}
+  
+
+/* RECOMMENDED GAMES*/  
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.row {
+    width:90% ;
+    height: 80vh;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.content-box {
+    width: 21vw;
+    height: 50vh;
+    position: relative;
+    padding-bottom: 50%; /* 2:1 aspect ratio */
+}
+
+.content-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out, border-width 0.2s ease-in-out;
+}
+
+.content-image:hover img {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+    border-width: 3px; /* Increase border width on hover */
+}
+
+.content-info {
+    text-align: left;
+    padding: 10px;
+}
+.content-info h2{
+    text-align: center;
+    font-size: 2vw;
+    color: chartreuse;
+    padding: auto;
+}
+.content-info p{
+    font-size: 17px;
+    word-spacing: 3px;
+    font-style: normal;  
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color:  rgb(37, 134, 37);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color:black;
+}
+
+
+
+
+
+   /* Style the footer */
+   footer {
+    margin-top: 100px;
+    background-color:black;
+    color: white;
+    padding: 40px 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .logo h3 {
+    font-size: 20px;
+    padding-right: 50px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 20px 10px;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons img {
+    width: 40px;
+    height: auto;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.1);
+  }
+  
+  .scroll-top {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .scroll-top:hover {
+    color: #fff;
+  }
+  
+.line1{
+    width: 80vw;
+    height: 0.08px;
+    background-color: white;
+}
+  
